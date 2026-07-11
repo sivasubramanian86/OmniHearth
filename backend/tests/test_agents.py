@@ -6,9 +6,9 @@ import os
 # Force mock database configuration for test suite
 os.environ["USE_FIREBASE_EMULATOR"] = "true"
 
-from backend.app.main import app
-from backend.app.db.firebase import init_db, upsert_node, get_graph, db
-from backend.app.agents.coordinator import AgentCoordinator
+from app.main import app
+from app.db.firebase import init_db, upsert_node, get_graph, db
+from app.agents.coordinator import AgentCoordinator
 
 client = TestClient(app)
 

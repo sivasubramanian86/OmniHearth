@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from backend.app.agents.specialists.base import AgentClass
+from app.agents.specialists.base import AgentClass
 
 def get_health_metrics(family_member: str) -> Dict[str, Any]:
     """Retrieve wearable health tracker metrics (steps, sleep, heart rate)."""

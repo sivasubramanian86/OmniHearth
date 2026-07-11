@@ -19,7 +19,7 @@ if (-not (Test-Path $pythonExe)) {
     Exit 1
 }
 
-Start-Process -FilePath $pythonExe -ArgumentList "-m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000" -WorkingDirectory $root -NoNewWindow -PassThru
+Start-Process -FilePath $pythonExe -ArgumentList "-m uvicorn app.main:app --host 127.0.0.1 --port 8000" -WorkingDirectory $backendPath -NoNewWindow -PassThru
 
 # 2. Start Frontend Next.js Server
 Write-Host "Starting Next.js Development Server on Port 3000..." -ForegroundColor Yellow

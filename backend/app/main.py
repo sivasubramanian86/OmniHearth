@@ -8,8 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-from backend.app.db.firebase import init_db, get_graph
-from backend.app.agents.coordinator import AgentCoordinator
+from app.db.firebase import init_db, get_graph
+from app.agents.coordinator import AgentCoordinator
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)

@@ -5,3 +5,4 @@ python-dotenv==1.0.1
 pytest==8.2.2
 httpx>=0.28.1
 google-cloud-aiplatform>=1.48.1
+firebase-functions>=0.1.2

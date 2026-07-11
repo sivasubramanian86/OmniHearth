@@ -3,14 +3,14 @@ from typing import Dict, Any, Optional
 import uuid
 import datetime
 
-from backend.app.agents.specialists import (
+from app.agents.specialists import (
     LogisticsAgent,
     VitalityAgent,
     GuardianAgent,
     ScholarAgent,
     HAS_ADK
 )
-from backend.app.db.firebase import upsert_node, upsert_edge
+from app.db.firebase import upsert_node, upsert_edge
 
 logger = logging.getLogger("omnihearth.coordinator")
 

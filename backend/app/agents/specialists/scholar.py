@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from backend.app.agents.specialists.base import AgentClass
+from app.agents.specialists.base import AgentClass
 
 def get_daily_quests(family_member: str) -> List[Dict[str, Any]]:
     """Generate daily learning quests and educational targets."""

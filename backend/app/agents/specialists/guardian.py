@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from backend.app.agents.specialists.base import AgentClass
+from app.agents.specialists.base import AgentClass
 
 def get_screentime_stats(family_member: str) -> Dict[str, Any]:
     """Get active screentime data and digital detox quotas."""

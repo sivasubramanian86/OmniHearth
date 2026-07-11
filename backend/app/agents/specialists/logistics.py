@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from backend.app.agents.specialists.base import AgentClass
+from app.agents.specialists.base import AgentClass
 
 def get_calendar_events(family_member: str) -> List[Dict[str, Any]]:
     """Fetch calendar schedule events for a family member."""

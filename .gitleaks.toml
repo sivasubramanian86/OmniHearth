@@ -1,0 +1,36 @@
+# OmniHearth GitLeaks Configuration File
+title = "OmniHearth Secret Scanner Rules"
+
+[allowlist]
+description = "Allowed files and path patterns"
+paths = [
+  '''\.env\.example''',
+  '''backend/app/db/firebase\.py''',
+  '''design_screens/.*''',
+  '''\.pytest_cache/.*''',
+  '''package-lock\.json''',
+  '''yarn\.lock'''
+]
+
+[[rules]]
+id = "gcp-api-key"
+description = "Google Cloud API Key"
+regex = '''AIza[0-9A-Za-z\\-_]{35}'''
+keywords = ["AIza"]
+
+[[rules]]
+id = "gcp-service-account"
+description = "GCP Service Account Private Key"
+regex = '''"type":\s*"service_account"'''
+keywords = ["service_account"]
+
+[[rules]]
+id = "firebase-token"
+description = "Firebase CI Auth Token"
+regex = '''1//[0-9A-Za-z\\-_]{20,}'''
+
+[[rules]]
+id = "generic-api-key"
+description = "Generic API Key pattern"
+regex = '''(?i)(key|api|secret|token|auth)[_.-]?(key|api|secret|token|auth)?\s*[:=]\s*["']?[0-9a-zA-Z]{24,64}["']?'''
+keywords = ["api_key", "secret", "token", "auth_token"]

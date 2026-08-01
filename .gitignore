@@ -27,6 +27,11 @@ htmlcov/
 *.json
 !firebase.json
 !.firebaserc
+!package.json
+!tsconfig.json
+!skills-lock.json
+!*.gitleaks.toml
+
 
 # OS & System files
 .DS_Store
@@ -41,3 +46,8 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 .turbo
+
+# Local marketing / social documentation (not pushed to git)
+MEDIUM.md
+LINKEDIN.md
+

@@ -1,3 +1,8 @@
+> [!NOTE]
+> **OFFICIAL PORTFOLIO SHOWCASE BY SIVASUBRAMANIAN**  
+> **Original Author:** [Sivasubramanian](https://github.com/sivasubramanian86)  
+> *This repository is an open portfolio showcase. Unauthorized cloning, re-hosting, or submission to hackathons/competitions under another name is strictly prohibited.*
+
 # OmniHearth: Autonomous Household Operating System
 
 OmniHearth is an autonomous Household Operating System designed to orchestrate schedules, track family wellness, enforce digital detox policies, and enrich family education through modular, specialized AI agents operating over a unified memory graph.
